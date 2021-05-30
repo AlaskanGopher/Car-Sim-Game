@@ -1,6 +1,8 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
+
+#define _USE_MATH_DEFINES
 #include <math.h>
 
 float speed = 25;

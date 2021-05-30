@@ -18,7 +18,8 @@ int main()
     sf::Clock gameTime;
 
     // Framerate
-    window.setFramerateLimit(60);
+    //window.setFramerateLimit(60);
+    window.setVerticalSyncEnabled(true);
 
     // Car
     sf::Texture carText;
@@ -44,6 +45,11 @@ int main()
     if (!roadText[9].loadFromFile("sprites/roadTS.png")) {}
     if (!roadText[10].loadFromFile("sprites/roadTN.png")) {}
     if (!roadText[11].loadFromFile("sprites/roadTW.png")) {}
+    for (int i = 0; i < 11; i++)
+    {
+        roadText[i].generateMipmap();
+        roadText[i].setSmooth(true);
+    }
     // --- ----- ---
     // --- BUILDINGS ---
     if (!roadText[100].loadFromFile("sprites/facade00.png")) {}
