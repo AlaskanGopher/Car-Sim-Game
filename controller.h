@@ -5,12 +5,10 @@
 #define _USE_MATH_DEFINES
 #include <math.h>
 
+#include "vectors.h"
+
 float speed = 25;
 float turnspeed = 5;
-
-sf::Vector2f vector_from_angle_and_magnitude(float angle, float magnitude) {
-    return sf::Vector2f(magnitude * cosf(angle * (M_PI / 180)), magnitude * sinf(angle * (M_PI / 180)));
-}
 
 void controller(sf::Sprite &car)
 {
