@@ -2,9 +2,6 @@
 
 #include <SFML/Graphics.hpp>
 
-#define _USE_MATH_DEFINES
-#include <math.h>
-
 #include "vectors.h"
 
 float speed = 25;
